@@ -16,10 +16,25 @@ body {
 }
 
 .container header {
+  display: flex;
+  align-items: center;
+}
+
+.figma-logo {
+  width: 40px;
+  margin-top: 10px;
+  margin-left: 10px;
+}
+
+.user {
   font-size: 2rem;
-  font-weight: 600;
-  color: #1d2578;
+  font-weight: 300;
   padding: 0 10px;
+}
+
+.user-status {
+  margin-top: 10px;
+  margin-left: 10px;
 }
 
 .boxes-section {
@@ -35,19 +50,21 @@ body {
 
 .boxes-section_box--title {
   padding: 0 10px;
+  margin-left: 8px;
 }
 
-.boxes-section_box--para {
+.boxes-section_box--para,
+.today-section_boxes-box {
   background-color: #fff;
   padding: 10px;
   border-radius: 6px;
-  margin: 4px 10px;
+  margin: 15px;
 }
 
 .icon {
   font-variation-settings: "FILL" 0, "wght" 400, "GRAD" 0, "opsz" 48;
   color: black;
-  padding: 0.4rem;
+  padding: 0.4rem 0.4rem 0.4rem 0;
   font-size: 1.2rem;
   vertical-align: middle;
 }
@@ -58,6 +75,48 @@ body {
   padding: 0.3rem;
   font-size: 16px;
   vertical-align: middle;
+}
+
+.circle {
+  font-variation-settings: "FILL" 1, "wght" 400, "GRAD" 0, "opsz" 48;
+  color: #2d5da8;
+  vertical-align: middle;
+}
+/* Today */
+.today-section {
+  display: flex;
+  flex-direction: column;
+}
+
+.today-section-related {
+  color: #2d5da8;
+  padding: 0 10px;
+  font-weight: 300;
+  font-size: 16px;
+  margin-left: 8px;
+}
+
+.today-section_title {
+  padding: 10px;
+  color: #2d5da8;
+  font-weight: 200;
+  font-size: 16px;
+  margin-left: 8px;
+}
+
+.today-section_boxes-box--details {
+  font-size: 1rem;
+  color: #705574;
+}
+
+.today-section_boxes-box--title {
+  color: #2d5da8;
+  padding: 5px 0;
+}
+
+.today-section_boxes-box--para {
+  font-size: 14px;
+  line-height: 20px;
 }
 
 @media only screen and (max-width: 767px) {
