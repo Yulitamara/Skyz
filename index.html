@@ -458,59 +458,58 @@
 
           <div class="debit-slider--content">
             <div class="form-container">
-              <label class="lable form">
-                Type of receipt<span
-                  class="material-symbols-outlined star-icon warning-icon"
-                >
-                  star
-                </span>
-              </label>
-              <div
-                class="input-container form"
-                data-error="This is an error message"
+              <label class="top-lable" style="display: none"
+                >Type of receipt</label
               >
+
+              <div class="main-form">
+                <label class="lable form">
+                  Type of receipt<span
+                    class="material-symbols-outlined star-icon warning-icon"
+                  >
+                    star
+                  </span>
+                </label>
                 <input
                   type="text"
-                  class="input"
-                  placeholder="$"
-                  value="dcode123"
+                  oninput="return showicon()"
+                  class="input form"
+                  placeholder="Bank transfer"
                 />
+                <div class="delete-icon-container">
+                  <span class="material-symbols-outlined delete-icon form-icon">
+                    close
+                  </span>
+                </div>
+                <div class="form-icon-container">
+                  <span class="material-symbols-outlined form-icon">
+                    expand_more
+                  </span>
+                </div>
               </div>
 
-              <div class="form-icon-container">
-                <span class="material-symbols-outlined form-icon">
-                  expand_more
-                </span>
-              </div>
+              <div class="error">Error message!</div>
             </div>
 
             <div class="form-container">
-              <label class="lable form">
-                Bank account<span
-                  class="material-symbols-outlined star-icon warning-icon"
-                >
-                  star
-                </span>
-              </label>
-              <div
-                class="input-container form"
-                data-error="This is an error message"
-              >
-                <input
-                  type="text"
-                  class="input"
-                  placeholder="Type..."
-                  value="dcode123"
-                />
-              </div>
-
-              <div class="form-icon-container">
-                <span class="material-symbols-outlined form-icon">
-                  expand_more
-                </span>
+              <div class="main-form">
+                <label class="lable form">
+                  Bank account<span
+                    class="material-symbols-outlined star-icon warning-icon"
+                  >
+                    star
+                  </span>
+                </label>
+                <input type="text" class="input form" placeholder="Type..." />
+                <div class="form-icon-container">
+                  <span class="material-symbols-outlined form-icon">
+                    expand_more
+                  </span>
+                </div>
               </div>
             </div>
           </div>
+
           <!-- <div class="debit-slider--content">
             <p>currency</p>
           </div> -->
