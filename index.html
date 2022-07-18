@@ -35,7 +35,8 @@
         <div class="header-status">
           <span class="material-symbols-outlined circle-icon"> circle </span>
           Active
-          <span class="material-symbols-outlined stop-icon"> stop </span> last 31/3
+          <span class="material-symbols-outlined stop-icon"> stop </span> last
+          31/3
         </div>
       </header>
 
@@ -242,7 +243,9 @@
                       class="clsImpFieldValueAS"
                       onclick="preAsteriskClick(this,59959);"
                     >
-                      <span class="material-symbols-outlined star-icon"> star </span>
+                      <span class="material-symbols-outlined star-icon">
+                        star
+                      </span>
                     </span>
                   </span>
                   <span style="display: none"> </span>
@@ -408,7 +411,7 @@
 
       <div class="debit">
         <div class="debit-header">
-          <div class="debit-header--title">
+          <div class="debit-header--title forms-form--title">
             <span class="material-symbols-outlined title-icon">
               account_balance_wallet
             </span>
@@ -445,7 +448,7 @@
           </div>
 
           <div class="debit-slider--content">
-            <div class="debit-slider--content--title">
+            <div class="debit-slider--content--title forms-form--title">
               <span class="material-symbols-outlined title-icon">
                 price_change
               </span>
@@ -454,13 +457,67 @@
           </div>
 
           <div class="debit-slider--content">
-            <p>payments</p>
+            <div class="form-container">
+              <label class="lable form">
+                Type of receipt<span
+                  class="material-symbols-outlined star-icon warning-icon"
+                >
+                  star
+                </span>
+              </label>
+              <div
+                class="input-container form"
+                data-error="This is an error message"
+              >
+                <input
+                  type="text"
+                  class="input"
+                  placeholder="$"
+                  value="dcode123"
+                />
+              </div>
+
+              <div class="form-icon-container">
+                <span class="material-symbols-outlined form-icon">
+                  expand_more
+                </span>
+              </div>
+            </div>
+
+            <div class="form-container">
+              <label class="lable form">
+                Bank account<span
+                  class="material-symbols-outlined star-icon warning-icon"
+                >
+                  star
+                </span>
+              </label>
+              <div
+                class="input-container form"
+                data-error="This is an error message"
+              >
+                <input
+                  type="text"
+                  class="input"
+                  placeholder="Type..."
+                  value="dcode123"
+                />
+              </div>
+
+              <div class="form-icon-container">
+                <span class="material-symbols-outlined form-icon">
+                  expand_more
+                </span>
+              </div>
+            </div>
           </div>
-          <div class="debit-slider--content">
+          <!-- <div class="debit-slider--content">
             <p>currency</p>
-          </div>
+          </div> -->
         </div>
       </div>
     </div>
+
+    <script src="/skyz/js/debit.js"></script>
   </body>
 </html>

@@ -43,7 +43,8 @@ a:visited {
 
 .title-icon {
   display: inline-block;
-  vertical-align: -3px;
+  vertical-align: -2px;
+  font-size: calc(0.5rem + 0.5vw);
 }
 
 .stop-icon {
@@ -126,7 +127,8 @@ a:visited {
 }
 
 .forms-form--title {
-  font-size: calc(1rem + 0.5vw);
+  font-size: calc(0.5rem + 0.5vw);
+  font-weight: 500;
 }
 
 .forms-form--para {
@@ -151,13 +153,8 @@ a:visited {
           justify-content: space-between;
 }
 
-.debit-header--title {
-  font-size: calc(1rem + 0.5vw);
-  font-weight: 500;
-}
-
 .debit-header--date {
-  font-size: calc(1rem + 0.5vw);
+  font-size: calc(0.5rem + 0.5vw);
 }
 
 .debit-status {
@@ -190,8 +187,115 @@ a:visited {
   font-weight: 500;
 }
 
-.debit-slider--content--title {
+.debit-slider--content .form-container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin-bottom: 0.5rem;
+  max-width: 50rem;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.debit-slider--content .form-container .form {
+  display: block;
+  width: 100%;
+  padding: 0.5rem 1.5rem;
+  border: 1px solid #f4eff4;
+  border-right: none;
+  color: #6750a4;
   font-size: calc(1rem + 0.5vw);
-  font-weight: 500;
+}
+
+.debit-slider--content .form-container .input-container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.debit-slider--content .form-container .input-container[data-error] .input {
+  color: #c92432;
+}
+
+.debit-slider--content .form-container .input-container[data-error]::after {
+  content: attr(data-error);
+  font-size: 1.2rem;
+  color: #c92432;
+  display: block;
+}
+
+.debit-slider--content .form-container .input {
+  border: none;
+  color: #6750a4;
+  font-size: calc(1rem + 0.5vw);
+  width: 100%;
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
+}
+
+.debit-slider--content .form-container ::-webkit-input-placeholder {
+  /* Chrome, Firefox, Opera, Safari 10.1+ */
+  color: #21005d;
+  opacity: 1;
+  /* Firefox */
+}
+
+.debit-slider--content .form-container :-ms-input-placeholder {
+  /* Chrome, Firefox, Opera, Safari 10.1+ */
+  color: #21005d;
+  opacity: 1;
+  /* Firefox */
+}
+
+.debit-slider--content .form-container ::-ms-input-placeholder {
+  /* Chrome, Firefox, Opera, Safari 10.1+ */
+  color: #21005d;
+  opacity: 1;
+  /* Firefox */
+}
+
+.debit-slider--content .form-container ::placeholder {
+  /* Chrome, Firefox, Opera, Safari 10.1+ */
+  color: #21005d;
+  opacity: 1;
+  /* Firefox */
+}
+
+.debit-slider--content .form-container input:focus {
+  outline: none !important;
+  border-color: #f4eff4;
+}
+
+.debit-slider--content .form-container .lable {
+  background-color: #f4eff4;
+  border-top-left-radius: 4px;
+  border-bottom-left-radius: 4px;
+}
+
+.debit-slider--content .form-container .form-icon-container {
+  border: 1px solid #f4eff4;
+  color: #21005d;
+  border-top-right-radius: 4px;
+  border-bottom-right-radius: 4px;
+  border-left: 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding: 1rem;
+}
+
+.debit-slider--content .form-container .form-icon-container .form-icon {
+  cursor: pointer;
 }
 /*# sourceMappingURL=main-style.css.map */
