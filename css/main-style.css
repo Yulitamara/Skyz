@@ -1,0 +1,197 @@
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+:root {
+  font-size: 62.5%;
+}
+
+body {
+  background-color: #dae2f9;
+  font-family: "Roboto", sans-serif;
+  line-height: 1.9;
+  padding: 0.5rem;
+  max-width: 1281px;
+}
+
+.container {
+  width: 100%;
+  margin: 3rem;
+}
+
+li {
+  list-style: none;
+}
+
+a:link,
+a:visited {
+  text-decoration: none;
+  letter-spacing: 0.2rem;
+}
+
+.material-symbols-outlined {
+  font-variation-settings: "FILL" 0, "wght" 600, "GRAD" 0, "opsz" 48;
+  padding: 0.4rem 0.4rem 0.4rem 0;
+  font-size: calc(1rem + 0.5vw);
+  vertical-align: middle;
+}
+
+.title-icon {
+  display: inline-block;
+  vertical-align: -3px;
+}
+
+.stop-icon {
+  color: #aac7ff;
+  font-variation-settings: "FILL" 1, "wght" 100, "GRAD" 0, "opsz" 48;
+  padding: 0.3rem;
+}
+
+.circle-icon {
+  font-variation-settings: "FILL" 1, "wght" 400, "GRAD" 0, "opsz" 48;
+  color: #2d5da8;
+}
+
+.star-icon {
+  color: #6490de;
+  font-size: 1.5rem;
+  vertical-align: top;
+}
+
+.warning-icon {
+  color: #b3261e;
+}
+
+.tag-green {
+  color: #118844;
+  background-color: #ddffee;
+  font-size: calc(0.5rem + 0.5vw);
+  padding: 0 1rem;
+  border-radius: 50px;
+}
+
+.tag-red {
+  color: #ba1b1b;
+  background-color: #ffdad4;
+  font-size: calc(0.5rem + 0.5vw);
+  padding: 0 1rem;
+  border-radius: 50px;
+}
+
+.header-user {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.header-user-logo {
+  width: 50px;
+}
+
+.header-user-name {
+  padding-left: 6px;
+  font-size: calc(1.5rem + 1vw);
+}
+
+.header-tags {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  gap: 10px;
+  padding-left: 6px;
+}
+
+.header-status {
+  padding: 10px 6px;
+  font-size: calc(1rem + 0.5vw);
+}
+
+.forms {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: (max-content)[3];
+      grid-template-columns: repeat(3, -webkit-max-content);
+      grid-template-columns: repeat(3, max-content);
+  width: 100%;
+  padding-top: 1rem;
+  grid-gap: 10px;
+}
+
+.forms-form--title {
+  font-size: calc(1rem + 0.5vw);
+}
+
+.forms-form--para {
+  font-size: calc(1rem + 0.5vw);
+  background-color: #fff;
+  padding: 10px;
+  border-radius: 4px;
+}
+
+.debit {
+  margin-top: 4rem;
+  background-color: #fff;
+  padding: 10px;
+}
+
+.debit-header {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.debit-header--title {
+  font-size: calc(1rem + 0.5vw);
+  font-weight: 500;
+}
+
+.debit-header--date {
+  font-size: calc(1rem + 0.5vw);
+}
+
+.debit-status {
+  line-height: 1.7;
+  margin: 1.4rem 0;
+  color: #21005d;
+  font-size: calc(1rem + 0.5vw);
+}
+
+.debit-status .next,
+.debit-status .current {
+  color: #9a82db;
+}
+
+.debit-status .red {
+  color: #b3261e;
+}
+
+.debit-slider--title {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  gap: 20px;
+  padding-bottom: 2rem;
+}
+
+.debit-slider--title h1 {
+  color: #efb8c8;
+  font-size: calc(1rem + 0.5vw);
+  font-weight: 500;
+}
+
+.debit-slider--content--title {
+  font-size: calc(1rem + 0.5vw);
+  font-weight: 500;
+}
+/*# sourceMappingURL=main-style.css.map */
