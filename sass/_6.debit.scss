@@ -1,0 +1,113 @@
+.debit {
+  margin-top: 4rem;
+  background-color: #fff;
+  padding: 10px;
+  &-header {
+    display: flex;
+    justify-content: space-between;
+
+    &--date {
+      font-size: font-size(font-size-very-small);
+    }
+  }
+
+  &-status {
+    line-height: 1.7;
+    margin: 1.4rem 0;
+    color: #21005d;
+    font-size: font-size(font-size-small);
+    .next,
+    .current {
+      color: #9a82db;
+    }
+    .red {
+      color: #b3261e;
+    }
+  }
+
+  &-slider {
+    &--title {
+      display: flex;
+      gap: 20px;
+      padding-bottom: 2rem;
+      h1 {
+        color: #efb8c8;
+        font-size: font-size(font-size-small);
+        font-weight: font-weight(font-weight-medium);
+      }
+    }
+    &--content {
+      .form-container {
+        border-radius: 4px;
+        display: flex;
+        flex-direction: column;
+        margin-bottom: 0.5rem;
+        max-width: 50rem;
+        justify-content: center;
+
+        .top-lable {
+          padding: 0.5rem 1.5rem;
+          color: #b69df8;
+          font-size: font-size(font-size-very-small);
+        }
+
+        .main-form {
+          display: flex;
+          flex-direction: row;
+          border: 1px solid #f4eff4;
+          border-radius: 4px;
+
+          .lable {
+            background-color: #f4eff4;
+          }
+
+          input:focus {
+            outline: none !important;
+            border-color: #f4eff4;
+          }
+
+          .delete-icon-container {
+            display: flex;
+            align-items: center;
+
+            .active {
+              display: none;
+            }
+          }
+
+          .form-icon-container {
+            color: #21005d;
+            border-left: 0;
+            border-right: 0;
+            display: flex;
+            align-items: center;
+            padding: 1rem;
+          }
+        }
+
+        .error {
+          padding: 0.5rem 1.5rem;
+          color: #b3261e;
+          font-size: font-size(font-size-very-small);
+        }
+
+        .form {
+          display: block;
+          width: 100%;
+          padding: 0.5rem 1.5rem;
+          border: none;
+          border-right: none;
+          color: #6750a4;
+          font-size: font-size(font-size-small);
+        }
+
+        ::placeholder {
+          /* Chrome, Firefox, Opera, Safari 10.1+ */
+          color: #21005d94;
+          opacity: 1; /* Firefox */
+        }
+      }
+    }
+  }
+}
+

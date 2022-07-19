@@ -1,0 +1,19 @@
+.forms {
+  display: grid;
+  grid-template-columns: repeat(3, max-content);
+  width: 100%;
+  padding-top: 1rem;
+  grid-gap: 10px;
+  &-form {
+    &--title {
+      font-size: font-size(font-size-very-small);
+      font-weight: font-weight(font-weight-medium);
+    }
+    &--para {
+      font-size: font-size(font-size-small);
+      background-color: #fff;
+      padding: 10px;
+      border-radius: 4px;
+    }
+  }
+}

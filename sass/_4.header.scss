@@ -1,0 +1,25 @@
+.header {
+  // @extend %sec-padding;
+  &-user {
+    display: flex;
+    align-items: center;
+    &-logo {
+      width: 50px;
+    }
+    &-name {
+      padding-left: 6px;
+      font-size: font-size(font-size-regular);
+    }
+  }
+
+  &-tags {
+    display: flex;
+    gap: 10px;
+    padding-left: 6px;
+  }
+
+  &-status {
+    padding: 10px 6px;
+    font-size: font-size(font-size-small);
+  }
+}

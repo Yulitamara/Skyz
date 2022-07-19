@@ -1,0 +1,84 @@
+:root {
+  font-size: 62.5%;
+}
+
+body {
+  background-color: #dae2f9;
+  font-family: "Roboto", sans-serif;
+  line-height: 1.9;
+  padding: 0.5rem;
+  max-width: 1281px;
+}
+
+.container {
+  width: 100%;
+  margin: 3rem;
+}
+
+li {
+  list-style: none;
+}
+
+a:link,
+a:visited {
+  text-decoration: none;
+  letter-spacing: 0.2rem;
+}
+
+// *** icons ***
+.material-symbols-outlined {
+  font-variation-settings: "FILL" 0, "wght" 600, "GRAD" 0, "opsz" 48;
+  padding: 0.4rem 0.4rem 0.4rem 0;
+  font-size: font-size(font-size-small);
+  vertical-align: middle;
+}
+
+.title-icon {
+  display: inline-block;
+  vertical-align: -2px;
+  font-size: font-size(font-size-very-small);
+}
+
+.stop-icon {
+  color: #aac7ff;
+  font-variation-settings: "FILL" 1, "wght" 100, "GRAD" 0, "opsz" 48;
+  padding: 0.3rem;
+}
+
+.circle-icon {
+  font-variation-settings: "FILL" 1, "wght" 400, "GRAD" 0, "opsz" 48;
+  color: #2d5da8;
+}
+
+.star-icon {
+  color: #6490de;
+  font-size: 1.5rem;
+  vertical-align: top;
+}
+
+.warning-icon {
+  color: #b3261e;
+}
+
+.form-icon {
+  cursor: pointer;
+  color: #00000079;
+  font-size: font-size(font-size-small);
+}
+
+// ** Tags
+.tag-green {
+  color: #118844;
+  background-color: #ddffee;
+  font-size: font-size(font-size-very-small);
+  padding: 0 1rem;
+  border-radius: 50px;
+}
+
+.tag-red {
+  color: #ba1b1b;
+  background-color: #ffdad4;
+  font-size: font-size(font-size-very-small);
+  padding: 0 1rem;
+  border-radius: 50px;
+}
