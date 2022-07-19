@@ -60,7 +60,7 @@ a:visited {
 
 .star-icon {
   color: #6490de;
-  font-size: 1.5rem;
+  font-size: calc(0.5rem + 0.5vw);
   vertical-align: top;
 }
 
@@ -70,7 +70,7 @@ a:visited {
 
 .form-icon {
   cursor: pointer;
-  color: #00000079;
+  color: rgba(0, 0, 0, 0.4745098039);
   font-size: calc(1rem + 0.5vw);
 }
 
@@ -98,16 +98,13 @@ a:visited {
       -ms-flex-align: center;
           align-items: center;
 }
-
 .header-user-logo {
   width: 50px;
 }
-
 .header-user-name {
   padding-left: 6px;
   font-size: calc(1.5rem + 1vw);
 }
-
 .header-tags {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -115,28 +112,23 @@ a:visited {
   gap: 10px;
   padding-left: 6px;
 }
-
 .header-status {
   padding: 10px 6px;
   font-size: calc(1rem + 0.5vw);
 }
 
 .forms {
-  display: -ms-grid;
   display: grid;
-  -ms-grid-columns: (max-content)[3];
-      grid-template-columns: repeat(3, -webkit-max-content);
-      grid-template-columns: repeat(3, max-content);
+  grid-template-columns: repeat(3, -webkit-max-content);
+  grid-template-columns: repeat(3, max-content);
   width: 100%;
   padding-top: 1rem;
   grid-gap: 10px;
 }
-
 .forms-form--title {
   font-size: calc(0.5rem + 0.5vw);
   font-weight: 500;
 }
-
 .forms-form--para {
   font-size: calc(1rem + 0.5vw);
   background-color: #fff;
@@ -149,7 +141,6 @@ a:visited {
   background-color: #fff;
   padding: 10px;
 }
-
 .debit-header {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -158,27 +149,22 @@ a:visited {
       -ms-flex-pack: justify;
           justify-content: space-between;
 }
-
 .debit-header--date {
   font-size: calc(0.5rem + 0.5vw);
 }
-
 .debit-status {
   line-height: 1.7;
   margin: 1.4rem 0;
   color: #21005d;
   font-size: calc(1rem + 0.5vw);
 }
-
 .debit-status .next,
 .debit-status .current {
   color: #9a82db;
 }
-
 .debit-status .red {
   color: #b3261e;
 }
-
 .debit-slider--title {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -186,36 +172,12 @@ a:visited {
   gap: 20px;
   padding-bottom: 2rem;
 }
-
 .debit-slider--title h1 {
   color: #efb8c8;
   font-size: calc(1rem + 0.5vw);
   font-weight: 500;
 }
-
-.debit-slider--content .form-container {
-  border-radius: 4px;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-  margin-bottom: 0.5rem;
-  max-width: 50rem;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-}
-
-.debit-slider--content .form-container .top-lable {
-  padding: 0.5rem 1.5rem;
-  color: #b69df8;
-  font-size: calc(0.5rem + 0.5vw);
-}
-
-.debit-slider--content .form-container .main-form {
+.debit-slider--content .interactive-demo {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -223,86 +185,133 @@ a:visited {
   -webkit-box-direction: normal;
       -ms-flex-direction: row;
           flex-direction: row;
+  gap: 40px;
+}
+.debit-slider--content .interactive-demo .form-container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  max-width: -webkit-max-content;
+  max-width: -moz-max-content;
+  max-width: max-content;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  margin-bottom: 0.5rem;
   border: 1px solid #f4eff4;
   border-radius: 4px;
 }
-
-.debit-slider--content .form-container .main-form .lable {
+.debit-slider--content .interactive-demo .form-container .lable-container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  padding: 0 0.5rem;
+  color: #b69df8;
   background-color: #f4eff4;
 }
-
-.debit-slider--content .form-container .main-form input:focus {
-  outline: none !important;
-  border-color: #f4eff4;
-}
-
-.debit-slider--content .form-container .main-form .delete-icon-container {
+.debit-slider--content .interactive-demo .form-container .lable-container .form-icon-container {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+  padding: 0.5rem;
 }
-
-.debit-slider--content .form-container .main-form .delete-icon-container .active {
-  display: none;
-}
-
-.debit-slider--content .form-container .main-form .form-icon-container {
-  color: #21005d;
-  border-left: 0;
-  border-right: 0;
+.debit-slider--content .interactive-demo .form-container .lable-container .lable-text-container {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+  padding: 0.5rem;
+}
+.debit-slider--content .interactive-demo .form-container .lable-container .lable-text-container .lable-text {
+  font-size: 1.6rem;
+  font-size: calc(1rem + 0.5vw);
+}
+.debit-slider--content .interactive-demo .form-container .lable-container .star-icon-container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin: 0 0 15px 0;
+}
+.debit-slider--content .interactive-demo .form-container .input-container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
   padding: 1rem;
 }
-
-.debit-slider--content .form-container .error {
-  padding: 0.5rem 1.5rem;
-  color: #b3261e;
-  font-size: calc(0.5rem + 0.5vw);
-}
-
-.debit-slider--content .form-container .form {
+.debit-slider--content .interactive-demo .form-container .input-container input {
   display: block;
   width: 100%;
-  padding: 0.5rem 1.5rem;
   border: none;
-  border-right: none;
   color: #6750a4;
   font-size: calc(1rem + 0.5vw);
 }
-
-.debit-slider--content .form-container ::-webkit-input-placeholder {
-  /* Chrome, Firefox, Opera, Safari 10.1+ */
-  color: #21005d94;
-  opacity: 1;
-  /* Firefox */
+.debit-slider--content .interactive-demo .form-container .input-container input:focus {
+  outline: none !important;
+  border-color: #f4eff4;
 }
-
-.debit-slider--content .form-container :-ms-input-placeholder {
+.debit-slider--content .interactive-demo .form-container .input-container ::-webkit-input-placeholder {
   /* Chrome, Firefox, Opera, Safari 10.1+ */
-  color: #21005d94;
-  opacity: 1;
-  /* Firefox */
+  color: rgba(33, 0, 93, 0.5803921569);
+  opacity: 1; /* Firefox */
 }
-
-.debit-slider--content .form-container ::-ms-input-placeholder {
+.debit-slider--content .interactive-demo .form-container .input-container ::-moz-placeholder {
   /* Chrome, Firefox, Opera, Safari 10.1+ */
-  color: #21005d94;
-  opacity: 1;
-  /* Firefox */
+  color: rgba(33, 0, 93, 0.5803921569);
+  opacity: 1; /* Firefox */
 }
-
-.debit-slider--content .form-container ::placeholder {
+.debit-slider--content .interactive-demo .form-container .input-container :-ms-input-placeholder {
   /* Chrome, Firefox, Opera, Safari 10.1+ */
-  color: #21005d94;
-  opacity: 1;
-  /* Firefox */
+  color: rgba(33, 0, 93, 0.5803921569);
+  opacity: 1; /* Firefox */
 }
-/*# sourceMappingURL=style.css.map */
+.debit-slider--content .interactive-demo .form-container .input-container ::-ms-input-placeholder {
+  /* Chrome, Firefox, Opera, Safari 10.1+ */
+  color: rgba(33, 0, 93, 0.5803921569);
+  opacity: 1; /* Firefox */
+}
+.debit-slider--content .interactive-demo .form-container .input-container ::placeholder {
+  /* Chrome, Firefox, Opera, Safari 10.1+ */
+  color: rgba(33, 0, 93, 0.5803921569);
+  opacity: 1; /* Firefox */
+}
+.debit-slider--content .interactive-demo .form-container .input-container .form-icon-container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+.debit-slider--content .interactive-demo .message {
+  padding: 0 0.5rem;
+  font-size: calc(0.5rem + 0.5vw);
+}
+.debit-slider--content .interactive-demo .error {
+  color: #b3261e;
+}
+.debit-slider--content .interactive-demo .correct {
+  color: #118844;
+}
+.debit .active {
+  display: none;
+}/*# sourceMappingURL=style.css.map */

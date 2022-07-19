@@ -52,12 +52,13 @@ a:visited {
 
 .star-icon {
   color: #6490de;
-  font-size: 1.5rem;
+  font-size: font-size(font-size-very-small);
   vertical-align: top;
 }
 
 .warning-icon {
   color: #b3261e;
+  // font-size: 0.7rem;
 }
 
 .form-icon {
