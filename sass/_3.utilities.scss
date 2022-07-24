@@ -35,7 +35,6 @@ a:visited {
 
 .title-icon {
   display: inline-block;
-  vertical-align: -2px;
   font-size: font-size(font-size-very-small);
 }
 
@@ -61,8 +60,7 @@ a:visited {
   // font-size: 0.7rem;
 }
 
-.form-icon {
-  cursor: pointer;
+.field-icon {
   color: #00000079;
   font-size: font-size(font-size-small);
 }
@@ -82,4 +80,12 @@ a:visited {
   font-size: font-size(font-size-very-small);
   padding: 0 1rem;
   border-radius: 50px;
+}
+
+.error {
+  color: #b3261e;
+}
+
+.correct {
+  color: #118844;
 }

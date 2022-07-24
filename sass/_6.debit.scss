@@ -5,24 +5,6 @@
   &-header {
     display: flex;
     justify-content: space-between;
-
-    &--date {
-      font-size: font-size(font-size-very-small);
-    }
-  }
-
-  &-status {
-    line-height: 1.7;
-    margin: 1.4rem 0;
-    color: #21005d;
-    font-size: font-size(font-size-small);
-    .next,
-    .current {
-      color: #9a82db;
-    }
-    .red {
-      color: #b3261e;
-    }
   }
 
   &-slider {
@@ -40,103 +22,31 @@
       .interactive-demo {
         display: flex;
         flex-direction: row;
-        gap: 40px;
-        .form-container {
-          display: flex;
-          flex-direction: row;
-          max-width: max-content;
-          justify-content: center;
-          // flex-wrap: wrap;
-          
-
-          margin-bottom: 0.5rem;
-          border: 1px solid #f4eff4;
-          border-radius: 4px;
-
-          .lable-container {
-            display: flex;
-            flex-direction: row;
-            padding: 0 0.5rem;
-            color: #b69df8;
-            background-color: #f4eff4;
-
-            // only when form-container flex-direction is column
-            // height: 3.3rem;
-            //
-
-            .form-icon-container {
-              display: flex;
-              align-items: center;
-              padding: 0.5rem;
-            }
-
-            .lable-text-container {
-              display: flex;
-              align-items: center;
-              padding: 0.5rem;
-              .lable-text {
-                // only when form-container flex-direction is column
-                font-size: 1.6rem;
-                //
-                font-size: font-size(font-size-small);
-              }
-            }
-
-            .star-icon-container {
-              display: flex;
-              align-items: center;
-              margin: 0 0 15px 0;
-            }
-          }
-
-          .input-container {
-            display: flex;
-            flex-direction: row;
-            padding: 1rem;
-
-            input {
-              display: block;
-              width: 100%;
-              border: none;
-              color: #6750a4;
-              font-size: font-size(font-size-small);
-            }
-
-            input:focus {
-              outline: none !important;
-              border-color: #f4eff4;
-            }
-
-            ::placeholder {
-              /* Chrome, Firefox, Opera, Safari 10.1+ */
-              color: #21005d94;
-              opacity: 1; /* Firefox */
-            }
-
-            .form-icon-container {
-              display: flex;
-              align-items: center;
-            }
-          }
-        }
+        gap: 80px;
 
         .message {
           padding: 0 0.5rem;
           font-size: font-size(font-size-very-small);
         }
+      }
 
-        .error {
-          color: #b3261e;
+      .configuration {
+        &-title {
+          font-size: font-size(font-size-small);
         }
 
-        .correct {
-          color: #118844;
+        &-input-container {
+          color: #3d1188;
+
+          input {
+            padding: 10px;
+          }
+          label {
+            font-size: font-size(font-size-very-small);
+          }
         }
       }
     }
   }
-
-  .active {
-    display: none;
-  }
 }
+
