@@ -16,6 +16,11 @@
     />
     <link rel="stylesheet" href="../skyz/style.css" />
     <title>Document</title>
+    <script
+      src="https://code.jquery.com/jquery-3.6.0.min.js"
+      integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4="
+      crossorigin="anonymous"
+    ></script>
   </head>
   <body>
     <div class="container">
@@ -409,15 +414,24 @@
                       class="input"
                       placeholder="Bank transfer"
                     />
+                    <!-- 
                     <div class="field-icon-container">
                       <span
                         class="material-symbols-outlined delete-icon field-icon"
                       >
                         close
                       </span>
-                      <span class="material-symbols-outlined field-icon">
-                        expand_more
-                      </span>
+                    </div> -->
+
+                    <div class="input-right">
+                      <div class="field-type">work</div>
+                      <div class="field-icon-container">
+                        <span
+                          class="material-symbols-outlined collapse-icon field-icon"
+                        >
+                          expand_more
+                        </span>
+                      </div>
                     </div>
                   </div>
                 </div>
@@ -456,10 +470,48 @@
                   <input type="checkbox" id="no-icons" />
                   <label for="no-icons">Remove icons</label>
                 </div>
+                <div class="configuration-input-container">
+                  <input type="checkbox" id="no-background" />
+                  <label for="no-background">Remove background</label>
+                </div>
+              </div>
+            </div>
+            <div class="chip">
+              <div class="chip-head">
+                <img
+                  src="/skyz/user-chip.png"
+                  width="40px"
+                  height="40px"
+                  alt=""
+                  class="chip-img"
+                />
+              </div>
+              <div class="chip-content">Chip Content</div>
+              <div>
+                <span class="material-symbols-outlined chip-btn unchecked">
+                  radio_button_unchecked
+                </span>
+                <span class="material-symbols-outlined chip-btn checked active">
+                  check_circle
+                </span>
+                <span class="material-symbols-outlined chip-btn close active">
+                  close
+                </span>
+              </div>
+            </div>
+            <div class="configuration">
+              <div class="configuration-title">Configuration</div>
+              <div class="configuration-input-container">
+                <input type="checkbox" id="hide-img" />
+                <label for="hide-img">Hide Image</label>
               </div>
               <div class="configuration-input-container">
-                <input type="checkbox" id="no-background" />
-                <label for="no-background">Remove background</label>
+                <input type="checkbox" id="close" />
+                <label for="close">Change icon to X</label>
+              </div>
+              <div class="configuration-input-container">
+                <input type="checkbox" id="height" />
+                <label for="height">Change height when image is hidden</label>
               </div>
             </div>
           </div>
@@ -467,7 +519,6 @@
       </div>
     </div>
 
-    <script src="/skyz/js/jquery-3.6.0.slim.min.js"></script>
-    <script src="/skyz/js/debit.js"></script>
+    <script src="js/debit.js"></script>
   </body>
 </html>

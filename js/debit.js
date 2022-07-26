@@ -1,20 +1,14 @@
-let btnClear = document.querySelector(".delete-icon");
-let inputs = document.querySelectorAll(".input");
-btnClear.addEventListener("click", () => {
-  inputs.forEach((input) => (input.value = ""));
-});
+// let btnClear = document.querySelector(".delete-icon");
+// let inputs = document.querySelectorAll(".input");
+// btnClear.addEventListener("click", () => {
+//   inputs.forEach((input) => (input.value = ""));
+// });
 
 // Configuration
 // Message
 $(function () {
   $(".message").hide();
 });
-
-// $(document).ready(function () {
-//   $("#message").click(function () {
-//     $(".message").toggle();
-//   });
-// });
 
 $("#message").click(function () {
   $(".message").toggle();
@@ -26,7 +20,6 @@ $(function () {
 });
 
 $("#rquired").click(function () {
-  $(".label").toggleClass("rquired-color");
   $(".rquired").toggleClass("rquired-color");
   $(".rquired").toggle();
 });
@@ -44,27 +37,51 @@ $("#remove-lable-text").click(function () {
 // Flex direction
 $("#flex-direction").click(function () {
   $(".field-container").toggleClass("flex");
-  $(".label-icon").toggleClass("change-label-text");
-  $(".label").toggleClass("change-label-text");
+  $(".label-icon, .label").toggleClass("change-label-text");
 });
 
 // Edit
 
 $("#edit").click(function () {
-  //   $(".lable-container").toggleClass({ "background-color": "#3d1188" });
-  $(".label-container").toggleClass("label-edit");
-  $(".label-icon").toggleClass("label-icon-edit");
+  $(".label-container, .input-right").toggleClass("label-edit");
   $(".field-container").toggleClass("field-container-edit");
+  $(".field-type, .field-icon").toggleClass("white-text");
 });
 
 // Remove icons
 $("#no-icons").click(function () {
   $(".field-icon").toggle();
+  $(".field-icon-container").toggle();
 });
 
 // Remove background and borders
 $("#no-background").click(function () {
-    $(".label-container").toggleClass("no-background");
-    $(".field-container").toggleClass("no-border");
-  });
-  
+  $(".label-container, .input-right").toggleClass("no-background");
+  $(".field-container").toggleClass("no-border");
+  $(".field-type, .field-icon, .label-container").toggleClass("dark-text");
+});
+
+// Chip
+$("#hide-img").click(function () {
+  $(".chip-head").toggle();
+});
+
+$(".unchecked").click(function () {
+  $(this).addClass("active");
+  $(".checked").toggleClass("active");
+});
+
+$(".checked").click(function () {
+  $(this).addClass("active");
+  $(".unchecked").toggleClass("active");
+});
+
+// Change icon to X
+$("#close").click(function () {
+  $(".close").toggleClass("active");
+  $(".unchecked, .checked").addClass("active");
+});
+
+$("#height").click(function () {
+  $(".chip").toggleClass("height-chip");
+});
